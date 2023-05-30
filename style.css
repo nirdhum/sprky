@@ -95,16 +95,18 @@ nav .navigation ul li a:hover {
     margin-top: 10px;
     width: 50%;
     font-size: 1rem;
+    font-weight: 300;
     letter-spacing: 1px;
     line-height: 25px;
 }
 
 .hero a {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
     padding: 12px 35px;
     background-color: aliceblue;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 5px;
 }
 
@@ -115,4 +117,64 @@ nav .navigation ul li a:hover {
 .hero a.blueShade {
     color: aliceblue;
     background-color: #2a2af0;
+    margin-right: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero a.blueShade:hover {
+    color: #2a2af0;
+    background-color: aliceblue;
+}
+
+.hero a.yellowShade {
+    color: #1b1b44;
+    background-color: #F99C07;
+    margin-left: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero a.yellowShade:hover {
+    color: #F99C07;
+    background-color: #1b1b44;
+}
+
+/* features */
+
+.features {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+.feature-box {
+    background-color: aliceblue;
+    text-align: start;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: #1b1b44;
+}
+
+.feature-box h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #212152;
+    padding: 13px 0 7px 0;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #1b1b44;
+    font-weight: 400;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+    align-items: stretch;
+    margin-top: 30px;
 }
