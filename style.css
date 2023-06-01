@@ -142,7 +142,7 @@ nav .navigation ul li a:hover {
 /* features */
 
 .features {
-    padding: 5vw 8vw 0 8vw;
+    padding: 5vw 8vw 0;
     text-align: center;
 }
 
@@ -183,7 +183,7 @@ nav .navigation ul li a:hover {
 /* popular-courses */
 
 .popular-courses {
-    padding: 5vw 8vw 0 8vw;
+    padding: 5vw 8vw;
     text-align: center;
 }
 
@@ -246,7 +246,6 @@ nav .navigation ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
 }
 
 .registration .reminder h1 {
@@ -273,7 +272,7 @@ nav .navigation ul li a:hover {
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1px;
-    border: 1px solid rgba(240, 248, 255, 0.4);
+    border: 1px solid rgba(240, 248, 255, 0.2);
 }
 
 .registration .registration-form {
@@ -284,7 +283,7 @@ nav .navigation ul li a:hover {
     flex-direction: column;
     padding: 40px;
     box-shadow: 0 8px 32px 0 rgba(49, 57, 158, 0.4);
-    border: 1px solid rgba(240, 248, 255, 0.4);
+    border: 1px solid rgba(240, 248, 255, 0.2);
 }
 
 .registration .registration-form h3 {
@@ -340,3 +339,91 @@ nav .navigation ul li a:hover {
 }
 
 /* experts */
+
+.experts {
+    padding: 5vw 8vw;
+    text-align: center;
+}
+
+.experts-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+    align-items: stretch;
+}
+
+.expert {
+    background-color: #1b1b44;
+    padding: 40px 10px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.expert .expert-img {
+    position: relative;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expert-img img {
+    width: 100%;
+    height: auto;
+}
+
+.expert h6 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: aliceblue;
+}
+
+.expert p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.expert .socials {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #1b1b44;
+}
+
+.expert .socials i {
+    padding: 10px;
+    border: 1px solid aliceblue;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.expert .socials .fa-twitter:hover {
+    color: #1da1f2;
+    transform: scale(1.1);
+}
+
+.expert .socials .fa-linkedin-in:hover {
+    color: #0077b5;
+    transform: scale(1.1);
+}
+
+.expert .socials .fa-instagram:hover {
+    color: #e1306c;
+    transform: scale(1.1);
+}
+
+.expert .socials .fa-facebook-f:hover {
+    color: #3b5998;
+    transform: scale(1.1);
+}
