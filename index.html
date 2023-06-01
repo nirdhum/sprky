@@ -21,7 +21,7 @@
     <!-- Navbar -->
     <nav>
         <img src="img/logo-sprky-only-icon.png" alt="sprky-logo">
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -40,8 +40,8 @@
             alias ab? Lorem ipsum dolor sit amet consectetur adipisicing elit
             id voluptas.</p>
         <div class="btn">
-            <a class="blueShade" href="#">Get Started</a>
-            <a class="yellowShade" href="#">View Courses</a>
+            <a class="yellowShade" href="#">Get Started</a>
+            <a class="blueShade" href="#">View Courses <i class="fa-solid fa-angles-right"></i></a>
         </div>
     </section>
 
@@ -50,6 +50,12 @@
         <h1>Awsome Features</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <div class="feature-cards">
+            <div class="feature-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Scholar facility</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo nihil et repellendus unde saepe blan.
+                </p>
+            </div>
             <div class="feature-box">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <h3>Scholar facility</h3>
@@ -184,13 +190,49 @@
                     </div>
                 </div>
             </div>
+            <div class="courses">
+                <img src="img/course.jpg" alt="course name">
+                <div class="course-details">
+                    <span>Updated May 31, 2023</span>
+                    <h6>JavaScript Beginners Course</h6>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(7549)</span>
+                    </div>
+                    <div class="pricing">
+                        &#8377; 499
+                    </div>
+                </div>
+            </div>
+            <div class="courses">
+                <img src="img/course.jpg" alt="course name">
+                <div class="course-details">
+                    <span>Updated May 31, 2023</span>
+                    <h6>JavaScript Beginners Course</h6>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(7549)</span>
+                    </div>
+                    <div class="pricing">
+                        &#8377; 499
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- registration -->
     <section class="registration" id="registration">
         <div class="reminder">
-            <p>Get Courses for free</p>
+            <p>Get Courses for free!</p>
             <h1>Register Now!</h1>
             <div class="timer">
                 <div class="time">
@@ -280,33 +322,34 @@
 
     <!-- footer -->
     <footer>
+        <img src="img/logo-sprky-footer.png" alt="sprky-logo">
         <div class="foot-col">
             <h3>Column Title</h3>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
         </div>
         <div class="foot-col">
             <h3>Column Title</h3>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
         </div>
         <div class="foot-col">
             <h3>Column Title</h3>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
         </div>
         <div class="foot-col">
             <h3>Column Title</h3>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
-            <li>list item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
         </div>
         <div class="foot-col">
             <h3>Subscribe!</h3>
@@ -318,6 +361,7 @@
                 </div>
             </div>
         </div>
+        <a href="#navigation" class="backToTop" id="backToTop"><i class="fa-solid fa-angle-up"></i></a>
     </footer>
 
     <script src="script.js"></script>
