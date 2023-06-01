@@ -355,10 +355,16 @@ nav .navigation ul li a:hover {
 }
 
 .expert {
-    background-color: #1b1b44;
+    background-color: #54546d;
     padding: 40px 10px;
     color: aliceblue;
     border-radius: 10px;
+    box-shadow: 5px 8px 15px 0 rgba(49, 57, 158, 0.4);
+    transition: 0.2s ease-in-out;
+}
+
+.expert:hover {
+    transform: scale(1.03);
 }
 
 .expert .expert-img {
@@ -426,4 +432,26 @@ nav .navigation ul li a:hover {
 .expert .socials .fa-facebook-f:hover {
     color: #3b5998;
     transform: scale(1.1);
+}
+
+/* footer */
+
+footer {
+    padding: 5vw 8vw;
+    background-color: #1b1b44;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .foot-col {
+    padding-bottom: 40px;
+}
+
+footer .foot-col h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
