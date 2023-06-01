@@ -45,8 +45,8 @@ nav {
 }
 
 nav img {
-    width: 70px;
-    height: 60px;
+    width: 180px;
+    /* height: 60px; */
     cursor: pointer;
 }
 
@@ -76,7 +76,7 @@ nav .navigation ul li a:hover {
 /* hero */
 
 .hero {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(img/hero-section-bg.jpg);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.55), rgba(5, 4, 46, 0.7)), url(img/hero-section-bg.jpg);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -150,6 +150,14 @@ nav .navigation ul li a:hover {
     text-align: center;
 }
 
+.features h1 {
+    font-size: 3rem;
+}
+
+.features p {
+    font-size: 1.2rem;
+}
+
 .feature-box {
     background-color: aliceblue;
     text-align: start;
@@ -193,19 +201,26 @@ nav .navigation ul li a:hover {
 /* popular-courses */
 
 .popular-courses {
-    padding: 5vw 8vw;
+    padding: 3vw 8vw;
     text-align: center;
+}
+
+.popular-courses h1 {
+    font-size: 3rem;
+}
+
+.popular-courses p {
+    font-size: 1.2rem;
 }
 
 .course-box {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 1.5rem;
     row-gap: 1.5rem;
     align-items: stretch;
 }
-
 
 .courses {
     text-align: start;
@@ -213,7 +228,13 @@ nav .navigation ul li a:hover {
     position: relative;
     border-radius: 10px;
     box-shadow: 2px 3px 10px 0 rgba(49, 57, 158, 0.4);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
+
+/* .courses:hover {
+    transform: scale(1.03);
+} */
 
 .courses img {
     width: 100%;
@@ -248,9 +269,9 @@ nav .navigation ul li a:hover {
 /* registration */
 
 .registration {
-    padding: 6vw 8vw;
+    padding: 3vw 15vw;
     background-image: linear-gradient(rgba(48, 55, 87, 0.5), rgba(84, 94, 240, 0.5)), url(img/registration.jpg);
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -360,8 +381,16 @@ nav .navigation ul li a:hover {
 /* experts */
 
 .experts {
-    padding: 5vw 8vw;
+    padding: 3vw 8vw;
     text-align: center;
+}
+
+.experts h1 {
+    font-size: 3rem;
+}
+
+.experts p {
+    font-size: 1.2rem;
 }
 
 .experts-container {
@@ -458,17 +487,18 @@ nav .navigation ul li a:hover {
 
 /* footer */
 
-footer {
-    padding: 5vw 8vw;
+.footer-section {
+    padding: 3vw 8vw;
     background-color: #1b1b44;
     color: aliceblue;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
-footer .backToTop {
+.footer-section .backToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -481,27 +511,29 @@ footer .backToTop {
     box-shadow: 5px 8px 15px 0 rgba(49, 57, 158, 0.4);
 }
 
-footer .backToTop:hover {
+.footer-section .backToTop:hover {
     transform: scale(1.05);
 }
 
-footer img {
-    width: 90px;
-    height: 90px;
+.footer-section img {
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 }
 
-footer .foot-col {
-    padding-bottom: 40px;
-}
-
-footer .foot-col h3 {
+.footer-section .foot-col h3 {
     font-size: 1.4rem;
     font-weight: 400;
     padding-bottom: 10px;
 }
 
-footer .foot-col li {
+.footer-section .foot-col .subs-txt {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.footer-section .foot-col li {
     list-style: none;
     padding: 5px 0;
     color: rgb(171, 200, 224);
@@ -511,32 +543,110 @@ footer .foot-col li {
     transition: 0.2s ease-in-out;
 }
 
-footer .foot-col li:hover {
+.footer-section .foot-col li:hover {
     color: rgb(238, 247, 255);
     font-size: 1.2rem;
 }
 
-footer .foot-col .subscribe {
+.footer-section .foot-col .subscribe {
     margin-top: 20px;
 }
 
-footer .foot-col .subscribe input {
-    padding: 15px;
-    width: 280px;
+.footer-section .foot-col .subscribe input {
+    padding: 12px 15px;
+    width: 270px;
     font-family: inherit;
     font-size: 1.1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     outline: none;
     border: 0;
 }
 
-footer .foot-col .subscribe input:focus {
+.footer-section .foot-col .subscribe input:focus {
     outline: none;
 }
 
-footer .foot-col .subscribe input::placeholder {
+.footer-section .foot-col .subscribe input::placeholder {
     font-family: inherit;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+.footer-section .foot-col .subscribe a {
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    background-color: aliceblue;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.footer-section .foot-col .subscribe a.yellowShade {
+    color: #1b1b44;
+    background-color: #F99C07;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-section .foot-col .subscribe a.yellowShade:hover {
+    color: #1b1b44;
+    background-color: aliceblue;
+}
+
+.copyright {
+    width: 100%;
+    padding: 1vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copyright p {
+    color: #1b1b44;
+}
+
+.copyright .socials {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #1b1b44;
+}
+
+.copyright .socials i {
+    padding: 10px;
+    border: 2px solid #1b1b44;
+    border-radius: 15%;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.copyright .socials .fa-twitter:hover {
+    color: #1da1f2;
+    border: 2px solid #1da1f2;
+    transform: scale(1.1);
+}
+
+.copyright .socials .fa-linkedin-in:hover {
+    color: #0077b5;
+    border: 2px solid #0077b5;
+    transform: scale(1.1);
+}
+
+.copyright .socials .fa-instagram:hover {
+    color: #e1306c;
+    border: 2px solid #e1306c;
+    transform: scale(1.1);
+}
+
+.copyright .socials .fa-facebook-f:hover {
+    color: #3b5998;
+    border: 2px solid #3b5998;
+    transform: scale(1.1);
 }
