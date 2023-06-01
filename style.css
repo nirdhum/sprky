@@ -355,9 +355,9 @@ nav .navigation ul li a:hover {
 }
 
 .expert {
-    background-color: #54546d;
+    background-color: aliceblue;
     padding: 40px 10px;
-    color: aliceblue;
+    color: #1b1b44;
     border-radius: 10px;
     box-shadow: 5px 8px 15px 0 rgba(49, 57, 158, 0.4);
     transition: 0.2s ease-in-out;
@@ -387,7 +387,7 @@ nav .navigation ul li a:hover {
     font-weight: 500;
     margin-top: 5px;
     letter-spacing: 1px;
-    color: aliceblue;
+    color: #1b1b44;
 }
 
 .expert p {
@@ -403,9 +403,8 @@ nav .navigation ul li a:hover {
 
 .expert .socials i {
     padding: 10px;
-    border: 1px solid aliceblue;
-    background-color: aliceblue;
-    border-radius: 50%;
+    border: 2px solid #1b1b44;
+    border-radius: 15%;
     margin: 0 5px;
     height: 40px;
     width: 40px;
@@ -416,21 +415,25 @@ nav .navigation ul li a:hover {
 
 .expert .socials .fa-twitter:hover {
     color: #1da1f2;
+    border: 2px solid #1da1f2;
     transform: scale(1.1);
 }
 
 .expert .socials .fa-linkedin-in:hover {
     color: #0077b5;
+    border: 2px solid #0077b5;
     transform: scale(1.1);
 }
 
 .expert .socials .fa-instagram:hover {
     color: #e1306c;
+    border: 2px solid #e1306c;
     transform: scale(1.1);
 }
 
 .expert .socials .fa-facebook-f:hover {
     color: #3b5998;
+    border: 2px solid #3b5998;
     transform: scale(1.1);
 }
 
